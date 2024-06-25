@@ -8,12 +8,14 @@ import cv2
 import sqlite3
 import time
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, async_mode='eventlet')
 
-serial_port = '/dev/ttyUSB0'
+serial_port = '/dev/ttyUSB*'
 baud_rate = 9600
+
 try:
     ser = serial.Serial(serial_port, baud_rate, timeout=1)
 except serial.serialutil.SerialException as e:
