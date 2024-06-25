@@ -10,6 +10,9 @@ It runs on Ubuntu and uses SQLite for database storage.
 - **Webcam Picture Capture**: Takes a picture using the connected webcam upon left-click.
 
 ## Installation
+0. **Create and activate the Virtual environment** 
+   ```bash
+   python3 -m venv venv
 
 1. **Install Requirements**:
    ```bash
