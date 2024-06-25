@@ -18,7 +18,7 @@ try:
     ser = serial.Serial(serial_port, baud_rate, timeout=1)
 except serial.serialutil.SerialException as e:
     print(f"Error opening serial port: {e}")
-    #TODO: handle this exception
+    # TODO: handle this exception
     ser = None
 
 
@@ -110,7 +110,8 @@ def handle_mouse_event(json):
             'image_path': image_path
         })
     else:
-        #TODO: remove before publishing, using this only for testing functionality
+        # prints in console the coords of the cursor on non-click events
+        # TODO: remove before publishing, using this only for testing the functionality
         print(f'Mouse moved to: ({x}, {y}) (non-click)')
 
 
