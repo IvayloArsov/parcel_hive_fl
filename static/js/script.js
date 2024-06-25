@@ -13,6 +13,8 @@ $(document).ready(function() {
 
     $(document).mousedown(function(event) {
         if (event.which === 1) {
+            //added to make sure that left button is clicked
+            //was having issues without this part before that
             const x = event.pageX;
             const y = event.pageY;
             socket.emit('mouse_event', { x: x, y: y, click: true });
