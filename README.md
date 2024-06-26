@@ -2,7 +2,7 @@
 
 This web application is built with Python 3.10 and Flask,
 incorporating vanilla JavaScript for client-side functionalities.
-It runs on Ubuntu and uses SQLite for database storage.
+It uses SQLite for database storage. Tested and built on Ubuntu.
 
 ## Features
 
